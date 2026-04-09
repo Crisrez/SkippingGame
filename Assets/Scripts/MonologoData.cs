@@ -1,20 +1,15 @@
 using UnityEngine;
 
 
-public class MonologoData
-{
-    
-}
-
 [System.Serializable]
 public class LineaMonologo
 {
-    public string texto;
-    public Sprite traje;
+    public Sprite skin;
+    public string text;
 }
 
 [System.Serializable]
 public class PaqueteMonologo
 {
-    public LineaMonologo[] jason;
+    public LineaMonologo[] baseDeDatos;
 }

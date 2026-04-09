@@ -1,34 +1,252 @@
-[
-  {
+{
+  "baseDeDatos": [
+      {
     "sprite": "normal_happy",
-    "substitle": "¡Hola, hola, hola mis queridos pollitos!"
+    "text": "¡Hola, hola, hola mis queridos pollitos!"
   },
   {
     "sprite": "normal_happy",
-    "substitle": "¡Qué locura de mes!"
+    "text": "¡Qué locura de mes!"
   },
   {
     "sprite": "normal_happy",
-    "substitle": "Bienvenidos al último stream de marzo."
+    "text": "Bienvenidos al último stream de marzo."
   },
   {
     "sprite": "normal_happy",
-    "substitle": "Ya saben lo que significa esto, ¿verdad?"
+    "text": "Ya saben lo que significa esto, ¿verdad?"
   },
   {
     "sprite": "normal_happy",
-    "substitle": "Al final del directo de hoy voy a lanzar la encuesta definitiva."
+    "text": "Al final del directo de hoy voy a lanzar la encuesta definitiva."
   },
   {
     "sprite": "normal_happy",
-    "substitle": "Quien responda bien todas las preguntas se llevará el título indiscutido de Fan Destacado del Mes, con esa insignia VIP tan hermosa para el chat."
+    "text": "Quien responda bien todas las preguntas se llevará el título indiscutido de Fan Destacado del Mes, con esa insignia VIP tan hermosa para el chat."
   },
   {
     "sprite": "normal_happy",
-    "substitle": "Pero antes de llegar a eso, uff...tengo que contarles todo lo que me pasó hoy."
+    "text": "Pero antes de llegar a eso, uff...tengo que contarles todo lo que me pasó hoy."
   },
   {
     "sprite": "normal_happy",
-    "substitle": "Pónganse cómodos."
+    "text": "Pónganse cómodos."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Resulta que me levanté tempranísimo, tipo once y media, con una idea fija: quería cocinar."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Ya saben que yo en la cocina soy un peligro, la última vez que intenté hervir agua casi quemo el microondas."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Pero vi un reel de un flaco que hacía una receta súper estética, con esa musiquita lofi de fondo, y dije \"yo puedo\"."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Fui al supermercado, pero claro, me distraje en el pasillo de los artículos de limpieza porque había una oferta de suavizante que olía a lavanda del Himalaya."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Estuve media hora decidiendo si llevar el de lavanda o el de brisa primaveral."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Al final no llevé ninguno porque me acordé que no lavo la ropa, la mando al lavadero."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "En fin, llego a la verdulería y el verdulero, un genio total, me empieza a contar la historia de su cuñado que se compró una moto y se fue a... bueno, la cuestión es que llegué a casa con la mitad de los ingredientes."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Quería hacer esa tarta de manzana que preparan en los banquetes del Skyrim, ¿se acuerdan?"
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Esa que te restaura toda la barra de salud."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Empecé a mezclar harina, azúcar, un par de huevos que dudaba si estaban buenos porque flotaban un poquito en el agua, pero dije \"ya fue, si los cocino se mueren las bacterias\"."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Y ahí me di cuenta de que me faltaba el ingrediente principal del reel."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "El chico del video le ponía canela, pero a mí la canela me pica en la garganta."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Así que decidí innovar."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Anoten esto por si alguna vez hacen la receta: el ingrediente secreto que le puse a mi tarta de Skyrim, y que le dio ese toque mágico, no fue amor, fue nuez moscada."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Exactamente dos cucharaditas al ras."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Quedó espectacular, o sea, se me quemaron un poco los bordes y el centro estaba medio líquido, pero la intención es lo que cuenta."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Hablando de intenciones, quería tomarme un momento para hablarles de algo súper importante."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Ustedes saben que mantener este canal requiere mucha energía, y por eso hoy estamos patrocinados por una marca increíble."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "O al menos me dijeron que dijera que son increíbles en el brief que me mandaron por mail, un mail larguísimo por cierto, casi tan largo como los términos y condiciones de la nueva actualización de Windows, que obviamente acepté sin leer porque ¿quién tiene tiempo para eso?"
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "La marca vende unas bebidas energéticas que vienen en unas latas de colores flúor que brillan en la oscuridad."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Supuestamente tienen extracto de guaraná y taurina, aunque yo creo que es jugo de pomelo con mucha azúcar y colorante radioactivo."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "La de color azul me dejó la lengua manchada por tres días, parecía que me había comido a un pitufo."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Pero la de color verde lima zafa bastante, te da como una taquicardia linda, de esas que te hacen sentir vivo antes de jugar una partida clasificatoria."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Cuestión que me pidieron que les lea todo el panfleto publicitario, pero la verdad es que lo perdí."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Creo que lo usé para apoyar la tarta caliente y se quedó pegado en el molde."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Pero lo que sí me acuerdo perfecto, y esto les conviene a ustedes, es la promoción."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Si compran el pack de doce latas, tienen que ir al carrito de compras y usar mi código de descuento."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Escríbanlo bien, todo en mayúsculas: el código es SALTARELLORE."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Les va a dar un 15% de descuento en su compra."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "¡Y hablando de comprar cosas!"
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "¡Ayer me compré el nuevo RPG del que todo el mundo está hablando!"
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "El Chronicles of the Dark Abyss: Vengeance of the Fallen Knights Part 2."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Un título cortito, súper pegadizo."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Estuve farmeando experiencia durante catorce horas seguidas."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "El sistema de combate es rarísimo, tenés que apretar los botones al ritmo de una cumbia villera para hacer combos críticos, y el árbol de habilidades es más complicado que entender cómo funciona el algoritmo de las redes sociales."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Me pasé tres horas explorando un pantano espantoso donde el personaje caminaba súper lento, solo para conseguir una bota izquierda de nivel 2."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "¡Una bota izquierda!"
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Y encima era fea, de color marrón caca."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Pero yo soy testaruda, ustedes me conocen."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Dije \"no me voy a ir a dormir hasta no derrotar al jefe de esta zona\"."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "El chat me decía que llevara pociones de veneno, pero yo fui con mi espada oxidada y mucha fe."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "La cinemática antes de la pelea duró como veinte minutos, el villano empezó a dar un discurso sobre cómo la sociedad lo había marginado y cómo planeaba destruir el mundo usando un láser satelital gigante impulsado por la energía de... ni idea, me distraje mirando el celular porque me llegó un mensaje de mi tía preguntando si iba a ir a almorzar el domingo."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Cuando levanté la vista, la pelea ya había empezado."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Y me llevé la sorpresa de mi vida."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Todos esperaban que fuera un dragón oscuro o un hechicero milenario, pero no."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "El jefe final de toda esa zona del pantano era, literalmente, un caniche toy gigante."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Sí, un perrito blanco, peludito, que te atacaba tirándote ladridos supersónicos."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Me mató quince veces."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "¡En fin!"
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Esa fue mi semana."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Y ahora, el momento que todos estaban esperando."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "¡El formulario para el Fan Destacado!"
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "Vamos a ver quién prestó verdadera atención a mis maravillosas anécdotas."
+  },
+  {
+    "sprite": "normal_happy",
+    "text": "¡Mando la poll al chat!"
   }
-]
+  ]
+}

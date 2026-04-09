@@ -6,28 +6,40 @@ using UnityEngine.UI;
 public class SubtitlesController : MonoBehaviour
 {
     public TextMeshProUGUI subtitle;
-    public string[] guion;
+    public PaqueteMonologo guionJson;
 
-    //public TextMeshProUGUI chat;
-    
     public Button botonSiguiente;
     public Button botonAtras;
     
     public int indice = 0;
     public int maxIndice;
-    //public int ;
 
 
     void Start()
     {
-        maxIndice = guion.Length - 1;
-        indice = maxIndice;
+        TextAsset archivo = Resources.Load<TextAsset>("guion");
+
+        if (archivo != null)
+        {
+            // "Traducción" del JSON a objetos de C#
+            guionJson = JsonUtility.FromJson<PaqueteMonologo>(archivo.text);
+            
+            if (guionJson != null && guionJson.baseDeDatos != null)
+            {
+                maxIndice = guionJson.baseDeDatos.Length - 1;
+                indice = maxIndice;
+                ActualizarTexto();
+            }
+        }
+        else
+        {
+            Debug.LogError("Ojo: No pusiste el JSON en la carpeta Resources o el nombre está mal.");
+        }
+
     }
 
     void Update()
     {
-        subtitle.text = guion[indice];
-        //chat.text = "¡Hola! Soy un mensaje de chat.";
 
 
     }
@@ -60,6 +72,6 @@ public class SubtitlesController : MonoBehaviour
 
     public void ActualizarTexto()
     {
-        subtitle.text = guion[indice];
+        subtitle.text = guionJson.baseDeDatos[indice].text;
     }
 }
