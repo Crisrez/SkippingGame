@@ -10,9 +10,13 @@ public class SubtitlesController : MonoBehaviour
 
     public Button botonSiguiente;
     public Button botonAtras;
+    public Animator animator;
     
     public int indice = 0;
     public int maxIndice;
+
+    public string skinActual;
+    public string skinPrevious;
 
 
     void Start()
@@ -50,6 +54,7 @@ public class SubtitlesController : MonoBehaviour
         {
             indice++; 
             ActualizarTexto();
+            ActualizarSprite();
         }
         else
         {
@@ -63,6 +68,7 @@ public class SubtitlesController : MonoBehaviour
         {
             indice--;
             ActualizarTexto();
+            ActualizarSprite();
         }
         else
         {
@@ -74,4 +80,39 @@ public class SubtitlesController : MonoBehaviour
     {
         subtitle.text = guionJson.baseDeDatos[indice].text;
     }
+
+    public int GetIndice()
+    {
+        return indice;
+    }
+
+    public void ActualizarSprite()
+    {
+        skinActual = guionJson.baseDeDatos[indice].skin;
+
+        if (skinActual != skinPrevious)
+        {
+            switch (skinActual)
+            {
+                case "happy":
+                    animator.SetTrigger("isHappy");
+                    break;
+
+                case "sponsor":
+                    animator.SetTrigger("isSponsor");
+                    break;
+
+                case "cooking":
+                    animator.SetTrigger("isCooking");
+                    break;
+
+                case "gaming":
+                    animator.SetTrigger("isGaming");
+                    break;
+            }
+            skinPrevious = skinActual;
+        }
+
+    }
+
 }

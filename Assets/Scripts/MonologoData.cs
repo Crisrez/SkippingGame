@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class LineaMonologo
 {
-    public Sprite skin;
+    public string skin;
     public string text;
 }
 
