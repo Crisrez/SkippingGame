@@ -28,9 +28,9 @@ public class SubtitlesController : MonoBehaviour
             // "Traducción" del JSON a objetos de C#
             guionJson = JsonUtility.FromJson<PaqueteMonologo>(archivo.text);
             
-            if (guionJson != null && guionJson.baseDeDatos != null)
+            if (guionJson != null && guionJson.guionBD != null)
             {
-                maxIndice = guionJson.baseDeDatos.Length - 1;
+                maxIndice = guionJson.guionBD.Length - 1;
                 indice = maxIndice;
                 ActualizarTexto();
             }
@@ -78,7 +78,7 @@ public class SubtitlesController : MonoBehaviour
 
     public void ActualizarTexto()
     {
-        subtitle.text = guionJson.baseDeDatos[indice].text;
+        subtitle.text = guionJson.guionBD[indice].text;
     }
 
     public int GetIndice()
@@ -88,7 +88,7 @@ public class SubtitlesController : MonoBehaviour
 
     public void ActualizarSprite()
     {
-        skinActual = guionJson.baseDeDatos[indice].skin;
+        skinActual = guionJson.guionBD[indice].skin;
 
         if (skinActual != skinPrevious)
         {

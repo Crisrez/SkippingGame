@@ -1,0 +1,29 @@
+{
+  "pollBD": 
+  [
+      {
+          "id": 1,
+          "quest": "¿Cuál fue el ingrediente secreto que Gigi le puso a la tarta de Skyrim?",
+          "opcA": "Amor y paciencia",
+          "opcB": "Canela en polvo",
+          "opcC": "Nuez moscada",
+          "opcD": "Suavizante de lavanda"
+      },
+      {
+          "id": 2,
+          "quest": "¿Cuál es el código de descuento para las bebidas energéticas?",
+          "opcA": "GIGISTREAMVIP",
+          "opcB": "FANDESTACADO15",
+          "opcC": "SALTARELLORE",
+          "opcD": "PITUFOAZUL"
+      },
+      {
+          "id": 3,
+          "quest": "¿Quién resultó ser el jefe final en el pantano del RPG?",
+          "opcA": "Un dragón oscuro",
+          "opcB": "Un hechicero milenario",
+          "opcC": "El cuñado del verdulero",
+          "opcD": "Un caniche toy gigante"
+      }
+  ]
+}

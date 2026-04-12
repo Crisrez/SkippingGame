@@ -1,0 +1,23 @@
+using UnityEngine;
+
+public class PollData
+{
+
+}
+
+[System.Serializable]
+public class LineaPoll
+{
+    public int id;
+    public string quest;
+    public string opcA;
+    public string opcB;
+    public string opcC;
+    public string opcD;
+}
+
+[System.Serializable]
+public class PaquetePoll
+{
+    public LineaPoll[] pollBD;
+}

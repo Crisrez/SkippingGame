@@ -11,5 +11,5 @@ public class LineaMonologo
 [System.Serializable]
 public class PaqueteMonologo
 {
-    public LineaMonologo[] baseDeDatos;
+    public LineaMonologo[] guionBD;
 }
