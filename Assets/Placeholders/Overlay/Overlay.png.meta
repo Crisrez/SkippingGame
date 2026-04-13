@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a78821af6980bf847aecfa325b749b3d
+guid: 08d68381c845e264bb10a21321221fcd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8045839983230980694
-    second: Spiring_Model_Mouth_Closed_-_Eyes_Closed_0
+      213: 7770301930588882849
+    second: Overlay_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spiring_Model_Mouth_Closed_-_Eyes_Closed_0
+      name: Overlay_0
       rect:
         serializedVersion: 2
-        x: 346
-        y: 129
-        width: 1307
-        height: 4077
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6521e1806d098af60800000000000000
-      internalID: 8045839983230980694
+      spriteID: 1a74842ef68a5db60800000000000000
+      internalID: 7770301930588882849
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spiring_Model_Mouth_Closed_-_Eyes_Closed_0: 8045839983230980694
+      Overlay_0: 7770301930588882849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

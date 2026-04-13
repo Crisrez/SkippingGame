@@ -14,6 +14,7 @@ public class LineaPoll
     public string opcB;
     public string opcC;
     public string opcD;
+    public string validAnswer;
 }
 
 [System.Serializable]

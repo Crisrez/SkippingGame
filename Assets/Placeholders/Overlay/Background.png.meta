@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 844533b2c62b2394bbd06038f3b563f6
+guid: 29b4e3d749fba6d4daf98a3e3ed0e46f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8134894925279814539
-    second: Spiring_Model_Mouth_Open_-_Eyes_Closed_0
+      213: -1955448553306655712
+    second: Background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spiring_Model_Mouth_Open_-_Eyes_Closed_0
+      name: Background_0
       rect:
         serializedVersion: 2
-        x: 346
-        y: 129
-        width: 1307
-        height: 4077
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b836e6285d3f4e070800000000000000
-      internalID: 8134894925279814539
+      spriteID: 024fa93b6e9dcd4e0800000000000000
+      internalID: -1955448553306655712
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spiring_Model_Mouth_Open_-_Eyes_Closed_0: 8134894925279814539
+      Background_0: -1955448553306655712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

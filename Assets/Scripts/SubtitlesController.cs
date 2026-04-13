@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SubtitlesController : MonoBehaviour
 {
     public TextMeshProUGUI subtitle;
-    public PaqueteMonologo guionJson;
+    public PaqueteSubtitles guionJson;
 
     public Button botonSiguiente;
     public Button botonAtras;
@@ -25,8 +25,7 @@ public class SubtitlesController : MonoBehaviour
 
         if (archivo != null)
         {
-            // "Traducción" del JSON a objetos de C#
-            guionJson = JsonUtility.FromJson<PaqueteMonologo>(archivo.text);
+            guionJson = JsonUtility.FromJson<PaqueteSubtitles>(archivo.text);
             
             if (guionJson != null && guionJson.guionBD != null)
             {
@@ -37,7 +36,7 @@ public class SubtitlesController : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Ojo: No pusiste el JSON en la carpeta Resources o el nombre está mal.");
+            Debug.LogError("Ojo: El JSON no se encuentra en la carpeta Resources o el nombre está mal.");
         }
 
     }
@@ -50,30 +49,46 @@ public class SubtitlesController : MonoBehaviour
 
     public void AvanzarLínea()
     {
-        if (indice < maxIndice)
-        {
-            indice++; 
+        /*if (indice < maxIndice)
+        {*/
+            indice++;
+            botonAtras.gameObject.SetActive(true);
+
+            if (indice >= maxIndice)
+            {
+                indice = maxIndice; 
+                botonSiguiente.gameObject.SetActive(false); 
+            }
+
             ActualizarTexto();
             ActualizarSprite();
-        }
+        /*}
         else
         {
             Debug.Log("Has llegado al final del texto.");
-        }
+        }*/
     }
 
     public void RetrocederLínea()
     {
-        if (indice > 0)
-        {
+        /*if (indice > 0)
+        {*/
             indice--;
+            botonSiguiente.gameObject.SetActive(true);
+
+            if (indice <= 0)
+            {
+                indice = 0; 
+                botonAtras.gameObject.SetActive(false); 
+            }
+
             ActualizarTexto();
             ActualizarSprite();
-        }
+        /*}
         else
         {
             Debug.Log("Estás en el inicio del texto.");
-        }
+        }*/
     }
 
     public void ActualizarTexto()

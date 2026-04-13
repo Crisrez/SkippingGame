@@ -7,7 +7,8 @@
           "opcA": "Amor y paciencia",
           "opcB": "Canela en polvo",
           "opcC": "Nuez moscada",
-          "opcD": "Suavizante de lavanda"
+          "opcD": "Suavizante de lavanda",
+          "validAnswer": "Nuez moscada"
       },
       {
           "id": 2,
@@ -15,7 +16,8 @@
           "opcA": "GIGISTREAMVIP",
           "opcB": "FANDESTACADO15",
           "opcC": "SALTARELLORE",
-          "opcD": "PITUFOAZUL"
+          "opcD": "PITUFOAZUL",
+          "validAnswer": "SALTARELLORE"
       },
       {
           "id": 3,
@@ -23,7 +25,8 @@
           "opcA": "Un dragón oscuro",
           "opcB": "Un hechicero milenario",
           "opcC": "El cuñado del verdulero",
-          "opcD": "Un caniche toy gigante"
+          "opcD": "Un caniche toy gigante",
+          "validAnswer": "Un caniche toy gigante"
       }
   ]
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 85570909505e40c448f9f22a92647d33
+guid: d7df641a35edb4f4ebb6d6721b611439
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4556555222168781157
-    second: Spiring_Model_Mouth_Open_-_Eyes_Open_0
+      213: 7826949717507848784
+    second: Chat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spiring_Model_Mouth_Open_-_Eyes_Open_0
+      name: Chat_0
       rect:
         serializedVersion: 2
-        x: 346
-        y: 129
-        width: 1307
-        height: 4077
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56142d835d22c3f30800000000000000
-      internalID: 4556555222168781157
+      spriteID: 05a36e29c49ee9c60800000000000000
+      internalID: 7826949717507848784
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 95f755a40d6f24845b1697d1bc204bf5
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spiring_Model_Mouth_Open_-_Eyes_Open_0: 4556555222168781157
+      Chat_0: 7826949717507848784
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

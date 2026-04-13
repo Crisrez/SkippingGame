@@ -26,16 +26,12 @@ public class PollController : MonoBehaviour
     [SerializeField] private float timeColdown;
     [SerializeField] private float startGame;
 
-    [SerializeField] private float timerGeneral;
+    public float timerGeneral;
     public TextMeshProUGUI timerGeneralText;
 
     [SerializeField] private int correctAnswers = 0;
 
     public int indiceQuestion = 0;
-    //System.Random rng = new System.Random();
-
-
-
 
 
 
@@ -45,7 +41,6 @@ public class PollController : MonoBehaviour
 
         if (archivo != null)
         {
-            // "Traducción" del JSON a objetos de C#
             pollJson = JsonUtility.FromJson<PaquetePoll>(archivo.text);
 
             if (pollJson != null && pollJson.pollBD != null)
@@ -55,7 +50,7 @@ public class PollController : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Ojo: No pusiste el JSON en la carpeta Resources o el nombre está mal.");
+            Debug.LogError("Ojo: El JSON no se encuentra en la carpeta Resources o el nombre está mal.");
         }
 
         pollPanel.SetActive(false);
@@ -66,17 +61,6 @@ public class PollController : MonoBehaviour
 
     void Update()
     {
-        /*if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            indiceQuestion = rng.Next(0, pollJson.pollBD.Length);
-            questionText.text = pollJson.pollBD[indiceQuestion].quest;
-            aText.text = pollJson.pollBD[indiceQuestion].opcA;
-            bText.text = pollJson.pollBD[indiceQuestion].opcB;
-            cText.text = pollJson.pollBD[indiceQuestion].opcC;
-            dText.text = pollJson.pollBD[indiceQuestion].opcD;
-        }*/
-
-
         timerGeneral += Time.deltaTime;
 
         timerGeneralText.text = "Tiempo: " + Mathf.FloorToInt(timerGeneral).ToString() + "s";
@@ -85,12 +69,17 @@ public class PollController : MonoBehaviour
     private IEnumerator StreamStart()
     {
         yield return new WaitForSeconds(startGame);
-        StartCoroutine(PollActivated());
+        PollActivated();
 
     }
 
-    private IEnumerator PollActivated()
+    private void PollActivated()
     {
+        aButton.interactable = true;
+        bButton.interactable = true;
+        cButton.interactable = true;
+        dButton.interactable = true;
+
         questionText.text = pollJson.pollBD[indiceQuestion].quest;
         aText.text = pollJson.pollBD[indiceQuestion].opcA;
         bText.text = pollJson.pollBD[indiceQuestion].opcB;
@@ -100,13 +89,7 @@ public class PollController : MonoBehaviour
         pollPanel.SetActive(true);
 
         StartCoroutine(PollTimer());
-        yield return new WaitForSeconds(timeColdown);
-
-        if (indiceQuestion < pollJson.pollBD.Length - 1)
-        {
-            indiceQuestion++;
-            StartCoroutine(PollActivated());
-        }
+        
     }
 
     private IEnumerator PollTimer()
@@ -122,13 +105,83 @@ public class PollController : MonoBehaviour
             yield return null;
         }
         
-        EndPoll();
+        StartCoroutine(EndPoll());
     }
 
-    private void EndPoll()
+    private IEnumerator EndPoll()
     {
         pollPanel.SetActive(false);
-        // Aquí puedes agregar lógica para evaluar las respuestas y actualizar el contador de respuestas correctas
+        
+        yield return new WaitForSeconds(timeColdown);
+
+        if (indiceQuestion < pollJson.pollBD.Length - 1)
+        {
+            indiceQuestion++;
+            PollActivated();
+        }
+        else
+        {
+            Debug.Log("¡Fin de las preguntas! Total Correctas: " + correctAnswers);
+            StreamEnd();
+        }
+
     }
+
+    private void StreamEnd()
+    {
+        Debug.Log("¡Gracias por participar en la encuesta!");
+        // Aquí podrías mostrar un resumen de resultados o reiniciar el juego, etc.
+    }
+
+
+
+
+    public void clickedButton(string idButton)
+    {
+        switch (idButton)
+        {
+            case "A":
+                OnAnswerSelected(aText.text);
+                break;
+            case "B":
+                OnAnswerSelected(bText.text);
+                break;
+            case "C":
+                OnAnswerSelected(cText.text);
+                break;
+            case "D":
+                OnAnswerSelected(dText.text);
+                break;
+
+        }
+    }
+
+
+
+    private void OnAnswerSelected(string selectedOption)
+    {
+        string correctOption = pollJson.pollBD[indiceQuestion].validAnswer;
+
+        if (selectedOption == correctOption)
+        {
+            correctAnswers++;
+            Debug.Log("Respuesta Correcta! Total Correctas: " + correctAnswers);
+        }
+        else
+        {
+            Debug.Log("Respuesta Incorrecta. La respuesta correcta era: " + correctOption);
+        }
+
+        aButton.interactable = false;
+        bButton.interactable = false;
+        cButton.interactable = false;
+        dButton.interactable = false;
+    }
+
+    public int GetCorrectAnswers()
+    {
+        return correctAnswers;
+    }
+
 
 }
