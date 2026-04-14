@@ -29,7 +29,10 @@ public class PollController : MonoBehaviour
     public float timerGeneral;
     public TextMeshProUGUI timerGeneralText;
 
+    [Header("Ending")]
+    [SerializeField] private EndingController endingController;
     [SerializeField] private int correctAnswers = 0;
+    [SerializeField] private int totalAnswers = 0;
 
     public int indiceQuestion = 0;
 
@@ -111,7 +114,7 @@ public class PollController : MonoBehaviour
     private IEnumerator EndPoll()
     {
         pollPanel.SetActive(false);
-        
+
         yield return new WaitForSeconds(timeColdown);
 
         if (indiceQuestion < pollJson.pollBD.Length - 1)
@@ -130,6 +133,15 @@ public class PollController : MonoBehaviour
     private void StreamEnd()
     {
         Debug.Log("¡Gracias por participar en la encuesta!");
+        
+        if (totalAnswers == 0)
+        {
+            endingController.ShowGoodEnding(correctAnswers, true);
+        }
+        else
+        {
+            endingController.ShowGoodEnding(correctAnswers, false);
+        }
         // Aquí podrías mostrar un resumen de resultados o reiniciar el juego, etc.
     }
 
@@ -138,6 +150,8 @@ public class PollController : MonoBehaviour
 
     public void clickedButton(string idButton)
     {
+        totalAnswers++;
+
         switch (idButton)
         {
             case "A":
