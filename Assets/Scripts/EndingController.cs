@@ -12,14 +12,14 @@ public class EndingController : MonoBehaviour
     [SerializeField] private GameObject gamePanel;
 
 
-    void Start()
-    {
-        goodEndingPanel.SetActive(false);
-        badEndingPanel.SetActive(false);
-        neutralEndingPanel.SetActive(false);
-        easterEggEndingPanel.SetActive(false);
+    //void Start()
+    //{
+    //    goodEndingPanel.SetActive(false);
+    //    badEndingPanel.SetActive(false);
+    //    neutralEndingPanel.SetActive(false);
+    //    easterEggEndingPanel.SetActive(false);
 
-    }
+    //}
 
     void Update()
     {
@@ -28,28 +28,32 @@ public class EndingController : MonoBehaviour
 
     public void ShowGoodEnding(int correctAnswers, bool easterEgg)
     {
-        gamePanel.SetActive(false);
-
         if (easterEgg)
         {
-            easterEggEndingPanel.SetActive(true);
+            PlayEnding(easterEggEndingPanel);
             return;
         }
         
         switch (correctAnswers){
             case 0:
-                badEndingPanel.SetActive(true);
+                PlayEnding(badEndingPanel);
             break;
             case 1:
-                badEndingPanel.SetActive(true);
+                PlayEnding(badEndingPanel);
             break;
             case 2:
-                neutralEndingPanel.SetActive(true);
+                PlayEnding(neutralEndingPanel);
             break;
             case 3:
-                goodEndingPanel.SetActive(true);
+                PlayEnding(goodEndingPanel);
             break;
         }
 
+    }
+
+    private void PlayEnding(GameObject endingPanel)
+    {
+        gamePanel.SetActive(false);
+        endingPanel.SetActive(true);
     }
 }

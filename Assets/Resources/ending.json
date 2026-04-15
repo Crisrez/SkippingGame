@@ -1,0 +1,120 @@
+{
+  "endingBD": [
+  {
+    "skin": "good_ending",
+    "text": "¡Eeeepa! ¡Pero qué memoria fotográfica, por favor!"
+  },
+  {
+    "skin": "good_ending",
+    "text": "¡Tenemos a alguien que no solo no me silenció, sino que prestó atención a cada una de mis desgracias cotidianas!"
+  },
+  {
+    "skin": "good_ending",
+    "text": "Felicidades %PLAYER_NAME%, te acabás de ganar el título de Fan Destacado del Mes."
+  },
+  {
+    "skin": "good_ending",
+    "text": "Te llevás la insignia VIP, el colorcito especial en el chat, y mi respeto absoluto por haber sobrevivido a mis anécdotas sin perder la cordura."
+  },
+  {
+    "skin": "good_ending",
+    "text": "¡Qué grande!"
+  },
+  {
+    "skin": "good_ending",
+    "text": "Bueno pollitos, ahora sí, me despido."
+  },
+  {
+    "skin": "good_ending",
+    "text": "Ah, casi me olvido del aviso parroquial: no se olviden que este sábado desde las 9:30 estaré en Tecnoteca probando los maravillosos juegos que salieron de la GameLab de Rosario Game Devs."
+  },
+  {
+    "skin": "good_ending",
+    "text": "¡Nos vemos ahí o en el próximo stream!"
+  },
+  {
+    "skin": "good_ending",
+    "text": "¡No se olviden de usar el código de descuento!"
+  },
+  {
+    "skin": "good_ending",
+    "text": "¡Chau, chau, chauuuuu!"
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "Mmmm... a ver esos resultados."
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "Bueno, raspando, eh."
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "Creo que el mejorcito fue... %PLAYER_NAME% ... aunque hasta ahi."
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "Le pegaste a algunas, pero se nota que en otras mandaste fruta o te pusiste a skipear sin piedad."
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "¿Te pensás que no me doy cuenta cuando adelantan el stream?"
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "La intención estuvo, pero la insignia VIP de Fan Destacado requiere perfección, así que este mes te quedás con las ganas."
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "%PLAYER_NAME% vas a tener que afinar esa atención para la próxima si querés el título."
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "En fin, me voy yendo. Pero antes, anoten esto en la agenda:"
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "No se olviden que este sábado desde las 9:30 estaré en Tecnoteca probando los maravillosos juegos que salieron de la GameLab de Rosario Game Devs."
+  },
+  {
+    "skin": "neutral_ending",
+    "text": "¡Vayan que va a estar genial! ¡Nos vemos, pollitos a medio hornear!"
+  },
+  {
+    "skin": "bad_ending",
+    "text": "Ayyy... no, no, no. Qué decepción total."
+  },
+  {
+    "skin": "bad_ending",
+    "text": "Cero, pollito, ¡cero respuestas correctas!"
+  },
+  {
+    "skin": "bad_ending",
+    "text": "Me parece que tuvieron el dedito muy rápido en el mouse hoy, ¿eh?"
+  },
+  {
+    "skin": "bad_ending",
+    "text": "Se saltearon la mejor parte de la historia y ahora pagan el precio."
+  },
+  {
+    "skin": "bad_ending",
+    "text": "Se nota a leguas que pusieron el stream de fondo mientras hacían otra cosa, ¡confiesen!"
+  },
+  {
+    "skin": "bad_ending",
+    "text": "La insignia de Fan Destacado quedará recontra vacante."
+  },
+  {
+    "skin": "bad_ending",
+    "text": "Me voy re indignada a jugar mi RPG, pero les dejo un último aviso antes de cerrar:"
+  },
+  {
+    "skin": "bad_ending",
+    "text": "No se olviden que este sábado desde las 9:30 estaré en Tecnoteca probando los maravillosos juegos que salieron de la GameLab de Rosario Game Devs."
+  },
+  {
+    "skin": "bad_ending",
+    "text": "¡A ver si a esos sí les prestan un poco más de atención! ¡Nos vimos!"
+  }
+ ]
+}

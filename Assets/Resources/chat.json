@@ -1,19 +1,494 @@
 {
   "chatBD": [
   {
+    "user": "Gabi B",
+    "emotes": "👀🍿",
+    "text": "Yo me quedé leyendo todo como si fuera una novela, estoy listísimo."
+  },
+  {
+    "user": "MartinFdez",
+    "emotes": "🏆🥇",
+    "text": "Hoy me llevo ese VIP, no me importa nada."
+  },
+  {
+    "user": "Goofy",
+    "emotes": "🤯💥",
+    "text": "Mucha información, mi disco duro está lleno."
+  },
+  {
+    "user": "lobitos",
+    "emotes": "🎧🔊🎶",
+    "text": "A este monólogo le faltó un buen efecto de sonido de grillos de fondo. ¡Suban el volumen que se acaba el tiempo!"
+  },
+  {
+    "user": "Lucho",
+    "emotes": "😴🛌",
+    "text": "Me desperté justo para la encuesta, ¿de qué tarta hablaban?"
+  },
+  {
+    "user": "Ramasioti",
+    "emotes": "🤦‍♂️🚫",
+    "text": "nooo m kede re afuera no escuche lo dl perro"
+  },
+  {
+    "user": "Dante Fuchs",
+    "emotes": "🦊🔥",
+    "text": "F en el chat por mi memoria a corto plazo."
+  },
+  {
+    "user": "Gastón",
+    "emotes": "🤷‍♂️🚩",
+    "text": "Si repruebo, le echo la culpa al lag."
+  },
+  {
+    "user": "Gian09",
+    "emotes": "🤣💀",
+    "text": "kjasjksajksajk no entendio nada Gigi"
+  },
+  {
+    "user": "Vane",
+    "emotes": "😰⏳",
+    "text": "Dios, qué estrés este temporizador, ¡no me acuerdo de nada!"
+  },
+  {
+    "user": "AIXA",
+    "emotes": "🛑✋",
+    "text": "Gigi, ¿vos respiraste en algún momento de los últimos 20 minutos?"
+  },
+  {
+    "user": "AlucardTesting",
+    "emotes": "🐛🔎⚠️",
+    "text": "Encontré un bug: mi cerebro dejó de procesar tu voz a los cinco minutos."
+  },
+  {
+    "user": "cata8509",
+    "emotes": "🎲🙏",
+    "text": "Apretando botones al azar, que los dioses del RNG me acompañen."
+  },
+  {
+    "user": "m4cgregor",
+    "emotes": "💀💨💨",
+    "text": "QPD mis respuestas"
+  },
+  {
+    "user": "Vee",
+    "emotes": "🏢🦾⚙️",
+    "text": "¡El sábado no te olvides probar Dialog Skipping!"
+  },
+  {
+    "user": "agus ;)",
+    "emotes": "😜✌️",
+    "text": "Ez pz lemon squeezy."
+  },
+  {
+    "user": "Aliss",
+    "emotes": "📝🤓",
+    "text": "Menos mal que tomé apuntes, los vendo a 500 bits."
+  },
+  {
+    "user": "almix",
+    "emotes": "🧂🧂",
+    "text": "mucha nuez moscada me dio sed"
+  },
+  {
+    "user": "AlterCharly",
+    "emotes": "🔄🙃",
+    "text": "¿Se puede reiniciar el stream? Es para un amigo."
+  },
+  {
+    "user": "Anwilina",
+    "emotes": "🌸🥺",
+    "text": "Gigi sos un sol pero m dio ansiedad el timer"
+  },
+  {
+    "user": "Arcien",
+    "emotes": "🕹️👾",
+    "text": "alta mecanica la d skipear lore jajaj"
+  },
+  {
+    "user": "ArzerGex",
+    "emotes": "🛡️⚔️",
+    "text": "aguante el caniche final boss kpo"
+  },
+  {
+    "user": "Bilie",
+    "emotes": "📉😭",
+    "text": "mi reputacion en el chat ffffff"
+  },
+  {
+    "user": "bupo",
+    "emotes": "📉😭💔",
+    "text": "En este momento mi corazón ve irse mis chances del VIP"
+  },
+  {
+    "user": "Chookity",
+    "emotes": "👽🛸",
+    "text": "Llevame, nave nodriza, no quiero responder esto."
+  },
+  {
+    "user": "Conga",
+    "emotes": "💃🥳",
+    "text": "dale q el sabado festejamos en la Lab"
+  },
+  {
+    "user": "Cris",
+    "emotes": "💻🛠️",
+    "text": "tira error el cerebro d tanto wall of text"
+  },
+  {
     "user": "Crisrez",
-    "emotes": "◝(ᵔᗜᵔ)◜◝(ᵔᗜᵔ)◜◝(ᵔᗜᵔ)◜",
-    "text": "YEAAAAAAAAHHHHH"
+    "emotes": "💻🤖⚙️",
+    "text": "Yo le programaría un bot de auto-completar a esta poll, no te puedo creer la cantidad de texto que tiraste."
+  },
+  {
+    "user": "Cuervo_Locutor",
+    "emotes": "🎙️💧",
+    "text": "Esa garganta ya debe estar pidiendo auxilio, ¡hidratate Gigi!"
+  },
+  {
+    "user": "Dakota Lihuen",
+    "emotes": "🌟💖",
+    "text": "Gigi te amo pero no te escuché ni la mitad jajaja."
+  },
+  {
+    "user": "Dani",
+    "emotes": "🤫🧏‍♂️",
+    "text": "skipear es mi pasion"
+  },
+  {
+    "user": "DantedeCara",
+    "emotes": "🏃‍♂️💨",
+    "text": "Speedrunneando la encuesta en 3, 2, 1..."
   },
   {
     "user": "DashiPants",
-    "emotes": "≽(•⩊ •マ≼≽(•⩊ •マ≼≽(•⩊ •マ≼",
-    "text": "WAHOOO"
+    "emotes": "🎨🖌️✨",
+    "text": "Mientras hablabas me dio tiempo de rediseñar toda la UI de la encuesta y hacerte un fanart."
+  },
+  {
+    "user": "Diewoo",
+    "emotes": "🏃‍♂️💨",
+    "text": "speedrun d poll kjjjjj"
+  },
+  {
+    "user": "Euge",
+    "emotes": "☕😵",
+    "text": "Necesito tres litros de café para procesar todo este lore."
+  },
+  {
+    "user": "EXI",
+    "emotes": "👽🛸",
+    "text": "esta transmision es d otro planeta"
+  },
+  {
+    "user": "Fabricio",
+    "emotes": "🧱🤯",
+    "text": "m explota la cabeza kien era el del caniche"
+  },
+  {
+    "user": "facu_afk",
+    "emotes": "🏃‍♂️💨",
+    "text": "Fui al baño un segundo, ¡¿QUÉ ME PERDÍ?!"
+  },
+  {
+    "user": "Fede",
+    "emotes": "🧊🥶",
+    "text": "m kede tieso con la rta 2"
+  },
+  {
+    "user": "Fede_Garcia",
+    "emotes": "🤦‍♂️🧱",
+    "text": "Pegándome la cabeza contra la pared por no prestar atención."
+  },
+  {
+    "user": "fercha",
+    "emotes": "💅💄✨",
+    "text": "No me importa el VIP, solo GIGI"
+  },
+  {
+    "user": "Franca",
+    "emotes": "💃✨",
+    "text": "Yo vine por el baile, no me avisaron que había prueba sorpresa."
+  },
+  {
+    "user": "Frank (Bloom Knight⚔)",
+    "emotes": "⚔️🛡️",
+    "text": "Mi espada está oxidada pero mi memoria está afiladísima."
+  },
+  {
+    "user": "Frann",
+    "emotes": "🤘🎸",
+    "text": "el metal no skipea pero yo si"
+  },
+  {
+    "user": "Gabrielcito",
+    "emotes": "👶🍼",
+    "text": "soy nuevo q hay q hacerrrr"
+  },
+  {
+    "user": "Garde",
+    "emotes": "🧐📖",
+    "text": "escuche todo pero no me acuerdo ni mi nombre"
+  },
+  {
+    "user": "GiustiERN",
+    "emotes": "⏱️🔥",
+    "text": "¡SE ACABA EL TIEMPO GENTE, RESPONDAN ALGO!"
+  },
+  {
+    "user": "GuillOS",
+    "emotes": "🐧💻",
+    "text": "corre en linux la poll?"
+  },
+  {
+    "user": "Hetfield",
+    "emotes": "🎸🔥",
+    "text": "master of puppets skipeando rtas"
+  },
+  {
+    "user": "huemangs",
+    "emotes": "👣👣",
+    "text": "sigo las huellas d gigi proximo fan destacado"
+  },
+  {
+    "user": "Ivancho",
+    "emotes": "🧉🤡",
+    "text": "PERO QUE DECIS GIGI"
+  },
+  {
+    "user": "JereK41",
+    "emotes": "📈💰",
+    "text": "el stonks d gigi subiendo x el drama del caniche"
+  },
+  {
+    "user": "jnine07",
+    "emotes": "📢💥",
+    "text": "TE ADOROOOOOOOO"
+  },
+  {
+    "user": "JPCard",
+    "emotes": "🪦💐",
+    "text": "Un minuto de silencio por los que skipearon todo y ahora están transpirando."
+  },
+  {
+    "user": "Juan Matsumoto",
+    "emotes": "🧮📉",
+    "text": "Calculando rtas... error 404 brain not found"
+  },
+  {
+    "user": "Juan S DuodecimStudio",
+    "emotes": "🎮🏢",
+    "text": "Esto en mi estudio no pasaba, le poníamos una cinemática."
+  },
+  {
+    "user": "Juli",
+    "emotes": "💖✨",
+    "text": "re linda la bota marron caca kjj"
+  },
+  {
+    "user": "Juliii",
+    "emotes": "🥰🍭",
+    "text": "d dnde sacaste el codigo gigi??"
+  },
+  {
+    "user": "Keta'sama",
+    "emotes": "👑🙇‍♂️",
+    "text": "Lo que usted diga, su majestad del yapping."
+  },
+  {
+    "user": "Kiara",
+    "emotes": "🎀💅",
+    "text": "gigi t amamos x mas streams asi"
+  },
+  {
+    "user": "Lautaro",
+    "emotes": "🛹🤙",
+    "text": "tirando facha en el chat dps d skipear todo"
+  },
+  {
+    "user": "Leonardo Gullotta",
+    "emotes": "🏛️📜",
+    "text": "Un analisis profundo d la tarta d skyrim"
+  },
+  {
+    "user": "Luca",
+    "emotes": "🍕🤤",
+    "text": "m dio hambre la parte d la cocina"
+  },
+  {
+    "user": "Luz",
+    "emotes": "😂🔦",
+    "text": "nooo el caniche gigante kjjjj me muero"
   },
   {
     "user": "MagoNacho",
-    "emotes": "(╥﹏╥)(╥﹏╥)(╥﹏╥)",
-    "text": "WWWWWWWWWWWWWWWWWW"
+    "emotes": "🎩📜🪄",
+    "text": "El guionista de tu vida es un sádico. Ni con mi mejor truco de magia hago desaparecer todo este lore."
+  },
+  {
+    "user": "Maitilus",
+    "emotes": "🌊🐚",
+    "text": "fluyendo con el yapping d hoy"
+  },
+  {
+    "user": "Marian",
+    "emotes": "😇🙏",
+    "text": "rezando para q sea la C"
+  },
+  {
+    "user": "Martin Q.",
+    "emotes": "👔💼",
+    "text": "dps dl laburo ver esto es cine"
+  },
+  {
+    "user": "mauro sangoy",
+    "emotes": "🧉🇦🇷",
+    "text": "dales gigi larga la rta q se lava el mate"
+  },
+  {
+    "user": "Mica",
+    "emotes": "🦄🌈",
+    "text": "el caniche era rosa o blanco??"
+  },
+  {
+    "user": "Mikhail",
+    "emotes": "❄️🥶",
+    "text": "Me quedé congelado en la pregunta dos."
+  },
+  {
+    "user": "Mikle",
+    "emotes": "👊💥",
+    "text": "aguante rosario gamedevs vieja"
+  },
+  {
+    "user": "misi legend",
+    "emotes": "🥬🔍📜",
+    "text": "Estoy segura de que la verdad es todavía más divertida"
+  },
+  {
+    "user": "Máxima",
+    "emotes": "👑💎",
+    "text": "la reina dl skip soy yo"
+  },
+  {
+    "user": "N4CHOo",
+    "emotes": "🤟🔥🚀",
+    "text": "CREO QUE LA EMBOQUEEE"
+  },
+  {
+    "user": "Nacho Lain",
+    "emotes": "🎬🍿",
+    "text": "kiero ver los juegos el sabado ya"
+  },
+  {
+    "user": "Nico",
+    "emotes": "🧢🧢",
+    "text": "alta gorra gigi con el timer"
+  },
+  {
+    "user": "ori",
+    "emotes": "🧸☁️",
+    "text": "me perdi en la mita pero te kiero"
+  },
+  {
+    "user": "Pablo87",
+    "emotes": "👴🧤",
+    "text": "en mis tiempos no habia tanto texto"
+  },
+  {
+    "user": "Pechu",
+    "emotes": "🍗🐔",
+    "text": "Pollito que se duerme termina en el horno."
+  },
+  {
+    "user": "Pitusa",
+    "emotes": "🍪☕",
+    "text": "merendando mientras gigi delira"
+  },
+  {
+    "user": "Rattlehead15",
+    "emotes": "🎸🤘",
+    "text": "Mucho texto, más rock and roll Gigi."
+  },
+  {
+    "user": "Roki",
+    "emotes": "🥱💤🛌",
+    "text": "Ni con un mapa me puedo volver a ubicar en este stream"
+  },
+  {
+    "user": "Santi",
+    "emotes": "🚀🌌",
+    "text": "me fui d orbita con el codigo d descuento"
+  },
+  {
+    "user": "Sebados",
+    "emotes": "🤙🔥",
+    "text": "d1 alto stream"
+  },
+  {
+    "user": "Seik",
+    "emotes": "👹🏮",
+    "text": "el jefe caniche es muy op"
+  },
+  {
+    "user": "Sparco",
+    "emotes": "🏎️🏁",
+    "text": "skipeando a 300km/h"
+  },
+  {
+    "user": "teclas",
+    "emotes": "⌨️🔥",
+    "text": "Se me gastó el click de tanto skipear, y encima ahora hay examen."
+  },
+  {
+    "user": "tetodev",
+    "emotes": "⌨️🖱️",
+    "text": "el mouse pide auxilio d tantos clicks"
+  },
+  {
+    "user": "Tincho B.",
+    "emotes": "🤔🧠",
+    "text": "Ante la duda, siempre es la C. O la B. Bueno, ya fue, tiro cualquiera."
+  },
+  {
+    "user": "Tinzuis",
+    "emotes": "🥧🍎🥧",
+    "text": "Quiero tortaaaa"
+  },
+  {
+    "user": "tomas zacarias",
+    "emotes": "🎒🏫",
+    "text": "esto no lo enseñan en la escu"
+  },
+  {
+    "user": "Tomás S",
+    "emotes": "🆘📚🆘",
+    "text": "Tiraste las pols y ya estoy sufriendo de ansiedad"
+  },
+  {
+    "user": "Vir",
+    "emotes": "🐱🐾",
+    "text": "miau x el caniche gigante"
+  },
+  {
+    "user": "Windragon231",
+    "emotes": "🐉🔥",
+    "text": "quemando el chat d la manija"
+  },
+  {
+    "user": "Yamax",
+    "emotes": "🎌🏮",
+    "text": "omedetou al q gane el vip"
+  },
+  {
+    "user": "zhishifenzi",
+    "emotes": "📚🧠",
+    "text": "Esto es más difícil que rendir finales en la facu."
+  },
+  {
+    "user": "✯ nat_maddie ✯",
+    "emotes": "✨💫",
+    "text": "¡Suerte a todos! (La van a necesitar)"
   }
 ]
 }

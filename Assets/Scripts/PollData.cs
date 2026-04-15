@@ -8,7 +8,7 @@ public class PollData
 [System.Serializable]
 public class LineaPoll
 {
-    public int id;
+    public string id;
     public string quest;
     public string opcA;
     public string opcB;
