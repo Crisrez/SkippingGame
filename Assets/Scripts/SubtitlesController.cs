@@ -1,12 +1,18 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 
 public class SubtitlesController : MonoBehaviour
 {
     public TextMeshProUGUI subtitle;
     public PaqueteSubtitles guionJson;
+    [SerializeField] private List<LineaSubtitles> guionList = new List<LineaSubtitles>();
+    [SerializeField] private PollController pollController;
+
+    private bool pollTriggered = false;
 
     public Button botonSiguiente;
     public Button botonAtras;
@@ -14,6 +20,10 @@ public class SubtitlesController : MonoBehaviour
     
     public int indice = 0;
     public int maxIndice;
+    public int indiceEnd;
+
+    [SerializeField] private float timerGeneral = 0f;
+    [SerializeField] private float tiempoEntreLineas = 4.5f; // Tiempo en segundos entre cada línea
 
     public string skinActual;
     public string skinPrevious;
@@ -29,8 +39,7 @@ public class SubtitlesController : MonoBehaviour
             
             if (guionJson != null && guionJson.guionBD != null)
             {
-                maxIndice = guionJson.guionBD.Length - 1;
-                indice = maxIndice;
+                ConvertirAListaSinEnd();
                 ActualizarTexto();
             }
         }
@@ -41,10 +50,61 @@ public class SubtitlesController : MonoBehaviour
 
     }
 
+    private void ConvertirAListaSinEnd()
+    {
+        for (int i = 0; i < guionJson.guionBD.Length; i++)
+        {
+            if (guionJson.guionBD[i].skin != "end")
+            {
+                guionList.Add(guionJson.guionBD[i]);
+            }
+            else
+            {
+                indiceEnd = i;
+                maxIndice = guionList.Count - 1;
+                indice = maxIndice;
+                botonSiguiente.gameObject.SetActive(false);
+                botonAtras.gameObject.SetActive(false);
+                Comienzo();
+                break;
+            }
+        }
+    }
+
     void Update()
     {
+        timerGeneral += Time.deltaTime;
 
+        if (pollTriggered) { return; }
 
+        if (timerGeneral >= tiempoEntreLineas)
+        {
+            if (guionList.Count != guionJson.guionBD.Length) 
+            {
+                Comienzo();
+                timerGeneral = 0f; // Reiniciar el temporizador
+            }
+            else
+            {
+                //if (guionList.Count == guionJson.guionBD.Length && !pollTriggered)
+                //{
+                    //maxIndice = guionList.Count - 1;
+                    botonAtras.gameObject.SetActive(true);
+                    pollController.PollActivated();
+                    pollTriggered = true;
+                //}
+            }
+        }
+
+    }
+
+    private void Comienzo()
+    {
+        guionList.Add(guionJson.guionBD[guionList.Count]);
+        indice = guionList.Count - 1;
+        maxIndice = indice;
+        ActualizarTexto();
+        ActualizarSprite();
     }
 
     public void AvanzarLínea()
@@ -93,13 +153,13 @@ public class SubtitlesController : MonoBehaviour
 
     public void ActualizarTexto()
     {
-        subtitle.text = guionJson.guionBD[indice].text;
+        subtitle.text = guionList[indice].text;
     }
 
-    public int GetIndice()
+    /*public int GetIndice()
     {
         return indice;
-    }
+    }*/
 
     public void ActualizarSprite()
     {
@@ -109,10 +169,6 @@ public class SubtitlesController : MonoBehaviour
         {
             switch (skinActual)
             {
-                case "happy":
-                    animator.SetTrigger("isHappy");
-                    break;
-
                 case "sponsor":
                     animator.SetTrigger("isSponsor");
                     break;
@@ -123,6 +179,9 @@ public class SubtitlesController : MonoBehaviour
 
                 case "gaming":
                     animator.SetTrigger("isGaming");
+                    break;
+                default:
+                    animator.SetTrigger("isHappy");
                     break;
             }
             skinPrevious = skinActual;

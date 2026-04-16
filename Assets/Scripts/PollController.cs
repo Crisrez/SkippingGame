@@ -61,7 +61,7 @@ public class PollController : MonoBehaviour
 
         ConvertirEnListaSegunCategoria();
 
-        StartCoroutine(StreamStart());
+        //StartCoroutine(StreamStart());
         //StartCoroutine(CooldownActivated());
     }
 
@@ -76,7 +76,7 @@ public class PollController : MonoBehaviour
 
     }
 
-    private void PollActivated()
+    public void PollActivated()
     {
         aButton.interactable = true;
         bButton.interactable = true;
@@ -137,10 +137,9 @@ public class PollController : MonoBehaviour
     {
         pollPanel.SetActive(false);
 
-        yield return new WaitForSeconds(timeColdown);
-
         if (indiceQuestion < pollList.Count - 1)
         {
+            yield return new WaitForSeconds(timeColdown);
             indiceQuestion++;
             PollActivated();
         }
@@ -156,14 +155,14 @@ public class PollController : MonoBehaviour
     {
         Debug.Log("¡Gracias por participar en la encuesta!");
         
-        if (totalAnswers == 0)
+        /*if (totalAnswers == 0)
         {
             endingController.ShowGoodEnding(correctAnswers, true);
-        }
-        else
-        {
+        }*/
+        /*else
+        {*/
             endingController.ShowGoodEnding(correctAnswers, false);
-        }
+        //}
         // Aquí podrías mostrar un resumen de resultados o reiniciar el juego, etc.
     }
 

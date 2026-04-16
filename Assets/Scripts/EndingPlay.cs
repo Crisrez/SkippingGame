@@ -5,13 +5,15 @@ using TMPro;
 
 public class EndingPlay : MonoBehaviour
 {
-    private PaqueteSubtitles endingJson;
-    private List<LineaSubtitles[]> endingList = new List<LineaSubtitles[]>();
+    [SerializeField] private PaqueteSubtitles endingJson;
+    [SerializeField] private List<LineaSubtitles[]> endingList = new List<LineaSubtitles[]>();
 
     [SerializeField] private TextMeshProUGUI subtitle;
     [SerializeField] private Animator animator;
     [SerializeField] private float tiempoEntreLineas = 4f;
     [SerializeField] private string typeEnding;
+
+    public string playerName;
 
     private float timerGeneral = 0f;
     private int indexLinea = 0;
@@ -23,18 +25,20 @@ public class EndingPlay : MonoBehaviour
 
         if (archivo != null)
         {
+            Debug.Log("Archivo JSON de Endings Encontrado");
             endingJson = JsonUtility.FromJson<PaqueteSubtitles>(archivo.text);
+            Debug.Log("Archivo JSON de Endings Cargado");
             if (endingJson != null && endingJson.guionBD != null)
             {
                 Debug.Log("Datos de los Endings Cargados");
             }
+            this.gameObject.SetActive(false);
         }
         else
         {
             Debug.LogError("Ojo: El JSON no se encuentra en la carpeta Resources o el nombre está mal.");
         }
 
-        this.gameObject.SetActive(false);
     }
 
 
@@ -42,25 +46,29 @@ public class EndingPlay : MonoBehaviour
     {
         ConvertirEnListaSegunCategoria();
 
-        switch(typeEnding)
+        playerName = Temporal.Instance.GetPlayerName();
+
+        switch (typeEnding)
         {
             case "good":
-                animator.SetTrigger("StartGood");
+                animator.SetTrigger("startGood");
                 categoria = 0;
             break;
             case "neutral":
-                animator.SetTrigger("StartNeutral");
+                animator.SetTrigger("startNeutral");
                 categoria = 1;
             break;
             case "bad":
-                animator.SetTrigger("StartBad");
+                animator.SetTrigger("startBad");
                 categoria = 2;
             break;
             case "easterEgg":
-                animator.SetTrigger("StartEasterEgg");
+                animator.SetTrigger("startEasterEgg");
                 categoria = 3;
             break;
         }
+
+        ReproducirFinal(indexLinea);
     }
 
     void Update()
@@ -79,6 +87,11 @@ public class EndingPlay : MonoBehaviour
 
         if (index < endingList[categoria].Length)
         {
+            if (endingList[categoria][index].text.Contains("%PLAYER_NAME%"))
+            {
+                endingList[categoria][index].text = endingList[categoria][index].text.Replace("%PLAYER_NAME%", playerName);
+            }
+
             subtitle.text = endingList[categoria][index].text;
             indexLinea++;
         }

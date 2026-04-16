@@ -1,35 +1,35 @@
 {
   "guionBD": [
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "¡Hola, hola, hola mis queridos pollitos!"
   },
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "¡Qué locura de mes!"
   },
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "Bienvenidos al último stream de marzo."
   },
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "Ya saben lo que significa esto, ¿verdad?"
   },
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "Al final del directo de hoy voy a lanzar la encuesta definitiva."
   },
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "Quien responda bien todas las preguntas se llevará el título indiscutido de Fan Destacado del Mes, con esa insignia VIP tan hermosa para el chat."
   },
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "Pero antes de llegar a eso, uff...tengo que contarles todo lo que me pasó hoy."
   },
   {
-    "skin": "happy",
+    "skin": "start",
     "text": "Pónganse cómodos."
   },
   {
@@ -225,27 +225,27 @@
     "text": "Me mató quince veces."
   },
   {
-    "skin": "happy",
+    "skin": "end",
     "text": "¡En fin!"
   },
   {
-    "skin": "happy",
+    "skin": "end",
     "text": "Esa fue mi semana."
   },
   {
-    "skin": "happy",
+    "skin": "end",
     "text": "Y ahora, el momento que todos estaban esperando."
   },
   {
-    "skin": "happy",
+    "skin": "end",
     "text": "¡El formulario para el Fan Destacado!"
   },
   {
-    "skin": "happy",
+    "skin": "end",
     "text": "Vamos a ver quién prestó verdadera atención a mis maravillosas anécdotas."
   },
   {
-    "skin": "happy",
+    "skin": "end",
     "text": "¡Mando la poll al chat!"
   }
 ]
