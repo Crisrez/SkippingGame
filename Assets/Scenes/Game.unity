@@ -3891,7 +3891,7 @@ MonoBehaviour:
   dText: {fileID: 757396865}
   sliderTimer: {fileID: 1062442383}
   startGame: 0
-  pollDuration: 30
+  pollDuration: 5
   timeColdown: 5
   endingController: {fileID: 1848329808}
 --- !u!114 &1848329807

@@ -290,13 +290,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949ebcc590d925b42a4e1f9231414343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Temporal
-  audio: {fileID: 0}
-  sliderVolumen: {fileID: 0}
+  playerName: 
+  inputField: {fileID: 0}
+  submitButton: {fileID: 0}
   panelTutorial: {fileID: 1136655516}
-  inputField: {fileID: 1646788865}
-  userField: {fileID: 1596840906}
-  submitButton: {fileID: 588650555}
   loadingText: {fileID: 704081031}
+  sliderVolumen: {fileID: 0}
+  audio: {fileID: 0}
+  finishLoad: 0
+  continueGame: 0
 --- !u!4 &522432548
 Transform:
   m_ObjectHideFlags: 0
@@ -359,7 +361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &588650556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1940,7 +1942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1596840907
 RectTransform:
   m_ObjectHideFlags: 0
