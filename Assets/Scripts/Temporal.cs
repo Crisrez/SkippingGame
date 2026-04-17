@@ -6,10 +6,6 @@ using System.Collections;
 
 public class Temporal : MonoBehaviour
 {
-    [Header("Audio")]
-    [SerializeField] AudioSource audio;
-    [SerializeField] Slider sliderVolumen;
-
     [Header("Tutorial")]
     [SerializeField] GameObject panelTutorial;
     [SerializeField] TextMeshProUGUI inputField;
@@ -96,27 +92,4 @@ public class Temporal : MonoBehaviour
         SetPlayerName();
         continueGame = true;
     }
-
-    /*private void Start()
-    {
-        audio.volume = sliderVolumen.value;
-        audio.Play();
-        StartCoroutine(Volumen());
-    }
-
-    private IEnumerator Volumen()
-    {
-        while (sliderVolumen.value > 0)
-        {
-            sliderVolumen.value = Mathf.Max(0, sliderVolumen.value - 0.01f);
-            audio.volume = sliderVolumen.value;
-            yield return new WaitForSeconds(0.1f); // Espera un frame antes de continuar el bucle
-        }
-    }*/
-
-
-
-
-
-
 }

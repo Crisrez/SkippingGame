@@ -6,8 +6,18 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dialog Skipping 2_{-8787644857160920301}
-  m_AudioClip: {fileID: 8300000, guid: 475787a88216e0248b0c75b83c007a2a, type: 3}
+  m_Name: Dialog Skipping Menu_{-8787644857160920301}
+  m_AudioClip: {fileID: 8300000, guid: c1c58453fcd9d9e4ea68fecf127b8d8a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4699549162229866247
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: vinyl_stop_{-4699549162229866247}
+  m_AudioClip: {fileID: 8300000, guid: e981265c915189740879920d2ffe6d0d, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
@@ -19,31 +29,21 @@ AudioRandomContainer:
   m_Name: BackMusic
   m_Volume: 0
   m_Pitch: 0
-  m_AutomaticTriggerTime: 0
+  m_AutomaticTriggerTime: 0.01
   m_LoopCount: 1
   m_VolumeRandomizationRange: {x: 0, y: 0}
   m_PitchRandomizationRange: {x: 0, y: 0}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
-  - {fileID: 7592308156655915558}
   - {fileID: -8787644857160920301}
+  - {fileID: -4699549162229866247}
   m_AvoidRepeatingLast: 0
   m_PlaybackMode: 0
   m_TriggerMode: 0
   m_AutomaticTriggerMode: 1
-  m_LoopMode: 2
+  m_LoopMode: 0
   m_VolumeRandomizationEnabled: 0
   m_PitchRandomizationEnabled: 0
   m_AutomaticTriggerTimeRandomizationEnabled: 0
   m_LoopCountRandomizationEnabled: 0
---- !u!1233149941 &7592308156655915558
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Dialog Skipping Menu_{7592308156655915558}
-  m_AudioClip: {fileID: 8300000, guid: c1c58453fcd9d9e4ea68fecf127b8d8a, type: 3}
-  m_Volume: 0
-  m_Enabled: 1

@@ -2,22 +2,50 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    private AudioSource _audioSource;
+    [SerializeField] private AudioSource audioMenu;
+    [SerializeField] private AudioSource audioGame;
 
-    private void Awake()
+    public static MusicPlayer Instance { get; private set; }
+
+    public void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
-        _audioSource = GetComponent<AudioSource>();
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void PlayMusic()
     {
-        if (_audioSource.isPlaying) return;
-        _audioSource.Play();
+        if (audioMenu.isPlaying) return;
+        audioMenu.Play();
     }
 
     public void StopMusic()
     {
-        _audioSource.Stop();
+        audioMenu.Stop();
+    }
+
+    public void SetVolume(float volume)
+    {
+        audioGame.volume = volume;
+        audioMenu.volume = volume;
+    }
+
+    public float GetVolume()
+    {
+        return audioGame.volume;
+    }
+
+    public void ChangeMusic()
+    {
+        audioMenu.Stop();
+        audioMenu.Play();
+        audioGame.Play();
     }
 }

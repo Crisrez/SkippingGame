@@ -3,29 +3,33 @@ using UnityEngine.UI;
 
 public class VolumenController : MonoBehaviour
 {
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private float volumen = 1f;
     [SerializeField] private Slider slider;
 
     void Awake()
     {
-        audioSource.Play();
+        slider = gameObject.GetComponent<Slider>();
     }
 
     void Start()
     {
-        slider.value = volumen;
+        slider.gameObject.SetActive(false);
+        slider.value = MusicPlayer.Instance.GetVolume();
         slider.onValueChanged.AddListener(SetVolumen);
-    }
-
-    void Update()
-    {
-        audioSource.volume = volumen;
     }
 
     void SetVolumen(float value)
     {
-        volumen = value;
-        audioSource.volume = volumen; 
+        MusicPlayer.Instance.SetVolume(value);
     }
+
+    public void ShowSlider()
+    {
+        slider.gameObject.SetActive(true);
+    }
+
+    public void HideSlider()
+    {
+        slider.gameObject.SetActive(false);
+    }
+
 }
