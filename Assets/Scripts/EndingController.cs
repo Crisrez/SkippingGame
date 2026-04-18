@@ -33,22 +33,24 @@ public class EndingController : MonoBehaviour
             PlayEnding(easterEggEndingPanel);
             return;
         }
-        
-        switch (correctAnswers){
-            case 0:
-                PlayEnding(badEndingPanel);
-            break;
-            case 1:
-                PlayEnding(badEndingPanel);
-            break;
-            case 2:
-                PlayEnding(neutralEndingPanel);
-            break;
-            case 3:
-                PlayEnding(goodEndingPanel);
-            break;
+        else 
+        {
+            switch (correctAnswers)
+            {
+                case 0:
+                    PlayEnding(badEndingPanel);
+                    break;
+                case 1:
+                    PlayEnding(badEndingPanel);
+                    break;
+                case 2:
+                    PlayEnding(neutralEndingPanel);
+                    break;
+                case 3:
+                    PlayEnding(goodEndingPanel);
+                    break;
+            }
         }
-
     }
 
     private void PlayEnding(GameObject endingPanel)

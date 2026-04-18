@@ -3,18 +3,23 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.Audio;
+using UnityEngine.InputSystem;
 
 public class Temporal : MonoBehaviour
 {
     [Header("Tutorial")]
     [SerializeField] GameObject panelTutorial;
     [SerializeField] TextMeshProUGUI inputField;
-    [SerializeField] GameObject userField;
-    [SerializeField] GameObject submitButton;
+    [SerializeField] GameObject loginPanel;
     [SerializeField] TextMeshProUGUI loadingText;
 
+    [SerializeField] AudioMixer mixerMenu;
+    [SerializeField] AudioMixer mixerGame;
+
     private string playerName;
-    
+    private float volumenGeneral;
+
     private bool continueGame = false;
     private bool finishLoad = false;
 
@@ -36,8 +41,7 @@ public class Temporal : MonoBehaviour
 
     void Start()
     {
-        submitButton.SetActive(false);
-        userField.SetActive(false);
+        loginPanel.SetActive(false);
         panelTutorial.SetActive(false);
     }
 
@@ -50,6 +54,26 @@ public class Temporal : MonoBehaviour
     public string GetPlayerName()
     {
         return playerName;
+    }
+
+    public void SetVolumenGeneral()
+    {
+        mixerMenu.SetFloat("MenuVol", volumenGeneral);
+        mixerGame.SetFloat("GameVol", volumenGeneral);
+
+        Debug.Log("El volumen general es: " + volumenGeneral);
+    }
+
+    public void CambiarVolumen(float valorSlider)
+    {
+        // El valor debe estar entre 0.0001 y 1 (usamos logaritmos para el audio)
+        volumenGeneral = Mathf.Log10(valorSlider) * 20;
+        SetVolumenGeneral();
+    }
+
+    public float GetVolumenGeneral()
+    {
+        return volumenGeneral;
     }
 
     public void CambioScene()
@@ -75,14 +99,25 @@ public class Temporal : MonoBehaviour
         {
             yield return null;
         }
-            asyncLoad.allowSceneActivation = true;
+        
+        asyncLoad.allowSceneActivation = true;
 
     }
 
     public void WriterIsFinished()
     {
-        userField.SetActive(true);
-        submitButton.SetActive(true);
+        loadingText.text = "<grow>Click to Login...";
+
+        StartCoroutine(WaitLogin());
+    }
+
+    private IEnumerator WaitLogin()
+    {
+        while (!Input.GetMouseButtonDown(0))
+        {
+            yield return null;
+        }
+        loginPanel.SetActive(true);
 
         finishLoad = true;
     }

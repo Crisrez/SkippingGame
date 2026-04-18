@@ -13,6 +13,8 @@ public class EndingPlay : MonoBehaviour
     [SerializeField] private float tiempoEntreLineas = 4f;
     [SerializeField] private string typeEnding;
 
+    [SerializeField] private GameObject offlinePanel;
+
     public string playerName;
 
     private float timerGeneral = 0f;
@@ -47,6 +49,8 @@ public class EndingPlay : MonoBehaviour
         ConvertirEnListaSegunCategoria();
 
         playerName = Temporal.Instance.GetPlayerName();
+
+        Temporal.Instance.SetVolumenGeneral();
 
         switch (typeEnding)
         {
@@ -84,7 +88,6 @@ public class EndingPlay : MonoBehaviour
 
     private void ReproducirFinal(int index)
     {
-
         if (index < endingList[categoria].Length)
         {
             if (endingList[categoria][index].text.Contains("%PLAYER_NAME%"))
@@ -94,6 +97,12 @@ public class EndingPlay : MonoBehaviour
 
             subtitle.text = endingList[categoria][index].text;
             indexLinea++;
+        }
+        else
+        {
+            Debug.Log("Final del Ending");
+            offlinePanel.SetActive(true);
+            // Aquí puedes agregar lógica para finalizar el ending, como cargar una nueva escena o mostrar un mensaje final.
         }
     }
 

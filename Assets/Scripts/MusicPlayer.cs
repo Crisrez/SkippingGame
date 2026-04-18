@@ -46,6 +46,7 @@ public class MusicPlayer : MonoBehaviour
     {
         audioMenu.Stop();
         audioMenu.Play();
+
         audioGame.Play();
     }
 }

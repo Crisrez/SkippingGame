@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6215437240095444484
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sfx_UIcLick_007_{-6215437240095444484}
+  m_AudioClip: {fileID: 8300000, guid: 411500c0574be4a8c99eee553abb84a2, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1340009692849440096
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sfx_UIcLick_006_{-1340009692849440096}
+  m_AudioClip: {fileID: 8300000, guid: 630c8ae4c58ca4835a69d07d4c90790c, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-68558074739425805
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sfx_UIcLick_001_{-68558074739425805}
+  m_AudioClip: {fileID: 8300000, guid: 4e7402e51f9524805aeae18100602908, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4390203483435437154
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sfx_UIcLick_005_{4390203483435437154}
+  m_AudioClip: {fileID: 8300000, guid: 7cc4bca04936e4bd1900ad7abd9d678b, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5123644818188247532
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sfx_UIcLick_003_{5123644818188247532}
+  m_AudioClip: {fileID: 8300000, guid: a247b4b4f7efe432081b297d74c7adb3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: answerSFX
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -68558074739425805}
+  - {fileID: 7517134931445589123}
+  - {fileID: 7291755504131568213}
+  - {fileID: 4390203483435437154}
+  - {fileID: -1340009692849440096}
+  - {fileID: -6215437240095444484}
+  - {fileID: 5123644818188247532}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7291755504131568213
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sfx_UIcLick_004_{7291755504131568213}
+  m_AudioClip: {fileID: 8300000, guid: 7a5812c0a387f4879b38ed9c0c40553a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7517134931445589123
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sfx_UIcLick_002_{7517134931445589123}
+  m_AudioClip: {fileID: 8300000, guid: f266d92c583d3407390fae89bb59f2b1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

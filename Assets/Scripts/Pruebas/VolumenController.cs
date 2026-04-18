@@ -7,7 +7,7 @@ public class VolumenController : MonoBehaviour
 
     void Awake()
     {
-        slider = gameObject.GetComponent<Slider>();
+        //slider = gameObject.GetComponent<Slider>();
     }
 
     void Start()
@@ -22,9 +22,12 @@ public class VolumenController : MonoBehaviour
         MusicPlayer.Instance.SetVolume(value);
     }
 
-    public void ShowSlider()
+    public void ShowHideSlider()
     {
-        slider.gameObject.SetActive(true);
+        if (slider.gameObject.activeSelf)
+            slider.gameObject.SetActive(false);
+        else slider.gameObject.SetActive(true);
+
     }
 
     public void HideSlider()

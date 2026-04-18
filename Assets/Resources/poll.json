@@ -13,20 +13,20 @@
   {
     "id": "C",
     "quest": "¿Por qué finalmente NO compré el suavizante de lavanda del Himalaya?",
-    "opcA": "Porque no tenía dinero suficiente.",
-    "opcB": "Porque preferí el de brisa primaveral.",
-    "opcC": "Porque me acordé de que mandé la ropa al lavadero.",
-    "opcD": "Porque el verdulero me distrajo.",
-    "validAnswer": "Porque me acordé de que mandé la ropa al lavadero."
+    "opcA": "Porque no tenía dinero suficiente",
+    "opcB": "Porque preferí el de brisa primaveral",
+    "opcC": "Porque había mandado la ropa al lavadero",
+    "opcD": "Porque el verdulero me distrajo",
+    "validAnswer": "Porque había mandado la ropa al lavadero"
   },
   {
     "id": "C",
     "quest": "¿A qué hora dije que me levanté con la idea fija de cocinar?",
-    "opcA": "A las ocho en punto.",
-    "opcB": "Tipo once y media.",
+    "opcA": "A las ocho en punto",
+    "opcB": "Tipo once y media",
     "opcC": "Al mediodía.",
-    "opcD": "A las catorce horas.",
-    "validAnswer": "Tipo once y media."
+    "opcD": "A las catorce horas",
+    "validAnswer": "Tipo once y media"
   },
   {
     "id": "M",
@@ -40,20 +40,20 @@
   {
     "id": "M",
     "quest": "¿Qué le pasó al panfleto publicitario que tenía que leer?",
-    "opcA": "Se me manchó con la bebida azul.",
-    "opcB": "Lo usé para apoyar la tarta caliente y se quedó pegado en el molde.",
-    "opcC": "La tiré a la basura sin querer.",
+    "opcA": "Se me manchó con la bebida azul",
+    "opcB": "Lo usé para apoyar la tarta caliente",
+    "opcC": "La tiré a la basura sin querer",
     "opcD": "Se lo comió mi mascota.",
-    "validAnswer": "Lo usé para apoyar la tarta caliente y se quedó pegado en el molde."
+    "validAnswer": "Lo usé para apoyar la tarta"
   },
   {
     "id": "M",
     "quest": "¿Qué efecto secundario tuve al tomar la bebida energética de color azul?",
-    "opcA": "Me dio una taquicardia linda para las partidas clasificatorias.",
-    "opcB": "Me hizo brillar en la oscuridad por tres días.",
-    "opcC": "Me dejó la lengua manchada por tres días, pareciendo un pitufo.",
-    "opcD": "Me dio alergia y me picó la garganta.",
-    "validAnswer": "Me dejó la lengua manchada por tres días, pareciendo un pitufo."
+    "opcA": "Me dio una taquicardia linda",
+    "opcB": "Me hizo brillar en la oscuridad",
+    "opcC": "Me dejó la lengua manchada",
+    "opcD": "Me dio alergia y me picó la garganta",
+    "validAnswer": "Me dejó la lengua manchada"
   },
   {
     "id": "G",
@@ -67,20 +67,20 @@
   {
     "id": "G",
     "quest": "¿Qué recompensa obtuvo el personaje tras explorar el pantano espantoso durante tres horas?",
-    "opcA": "Una espada oxidada.",
-    "opcB": "Una poción de veneno de nivel 2.",
-    "opcC": "Una bota izquierda de nivel 2, de color marrón caca.",
-    "opcD": "Un láser satelital gigante.",
-    "validAnswer": "Una bota izquierda de nivel 2, de color marrón caca."
+    "opcA": "Una espada oxidada",
+    "opcB": "Una poción de veneno de nivel 2",
+    "opcC": "Una bota",
+    "opcD": "Un láser satelital gigante",
+    "validAnswer": "Una bota"
   },
   {
     "id": "G",
     "quest": "¿Cuántas veces me mató el jefe del pantano?",
     "opcA": "Catorce veces.",
-    "opcB": "Quince veces.",
-    "opcC": "Tres veces.",
-    "opcD": "Veinte veces.",
-    "validAnswer": "Quince veces."
+    "opcB": "Quince veces",
+    "opcC": "Tres veces",
+    "opcD": "Veinte veces",
+    "validAnswer": "Quince veces"
   }
   ]
 }
