@@ -37,6 +37,9 @@ public class Temporal : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        loginPanel.SetActive(false);
+        panelTutorial.SetActive(false);
     }
 
     void Start()

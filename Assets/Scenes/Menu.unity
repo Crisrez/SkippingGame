@@ -638,7 +638,6 @@ GameObject:
   - component: {fileID: 522432548}
   - component: {fileID: 522432547}
   - component: {fileID: 522432550}
-  - component: {fileID: 522432549}
   - component: {fileID: 522432551}
   m_Layer: 0
   m_Name: Indestructible
@@ -680,20 +679,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &522432549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522432546}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 673d472a87fb0d7419b026716f6e0613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HoverEffect
-  sliderCanvasGroup: {fileID: 0}
-  fondoImagen: {fileID: 0}
 --- !u!114 &522432550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,6 +1794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1136655517}
   - component: {fileID: 1136655518}
+  - component: {fileID: 1136655519}
   m_Layer: 5
   m_Name: Tutorial
   m_TagString: Untagged
@@ -1847,6 +1833,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136655516}
   m_CullTransparentMesh: 1
+--- !u!114 &1136655519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136655516}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77330d155829788448957466b77a36b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TUTORIALOFF
 --- !u!1 &1156141274
 GameObject:
   m_ObjectHideFlags: 0
