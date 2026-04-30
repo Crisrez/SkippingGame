@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 26e5ae10b44d67748beeb8071ce86567
+guid: 4c06634bb378b55418a8aec1692f698c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1955448553306655712
-    second: Background_0
+      213: -8321623722680504700
+    second: Lines-PNG-Pic_0
+  - first:
+      213: -3627073905204976184
+    second: Lines-PNG-Pic_1
+  - first:
+      213: 7562250966664788404
+    second: Lines-PNG-Pic_2
+  - first:
+      213: -1327581524074030718
+    second: Lines-PNG-Pic_3
+  - first:
+      213: -1513517336419656188
+    second: Lines-PNG-Pic_4
+  - first:
+      213: 8932255546552009399
+    second: Lines-PNG-Pic_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,10 +63,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +128,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background_0
+      name: diago
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 600
+        height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 024fa93b6e9dcd4e0800000000000000
-      internalID: -1955448553306655712
+      spriteID: 48e2a276057a38c80800000000000000
+      internalID: -8321623722680504700
       vertices: []
       indices: 
       edges: []
@@ -138,7 +153,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6120c63cea8b4a84f85f4adeeccd19a1
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +163,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background_0: -1955448553306655712
+      Lines-PNG-Pic_1: -3627073905204976184
+      Lines-PNG-Pic_2: 7562250966664788404
+      Lines-PNG-Pic_3: -1327581524074030718
+      Lines-PNG-Pic_4: -1513517336419656188
+      Lines-PNG-Pic_5: 8932255546552009399
+      diago: -8321623722680504700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

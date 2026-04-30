@@ -17,7 +17,7 @@ public class SubtitlesController : MonoBehaviour
     public Button botonSiguiente;
     public Button botonAtras;
     public Animator animator;
-    
+
     public int indice = 0;
     public int maxIndice;
     public int indiceEnd;
@@ -36,11 +36,10 @@ public class SubtitlesController : MonoBehaviour
         if (archivo != null)
         {
             guionJson = JsonUtility.FromJson<PaqueteSubtitles>(archivo.text);
-            
+
             if (guionJson != null && guionJson.guionBD != null)
             {
                 ConvertirAListaSinEnd();
-                ActualizarTexto();
             }
         }
         else
@@ -79,20 +78,16 @@ public class SubtitlesController : MonoBehaviour
 
         if (timerGeneral >= tiempoEntreLineas)
         {
-            if (guionList.Count != guionJson.guionBD.Length) 
+            if (guionList.Count != guionJson.guionBD.Length)
             {
                 Comienzo();
                 timerGeneral = 0f; // Reiniciar el temporizador
             }
             else
             {
-                //if (guionList.Count == guionJson.guionBD.Length && !pollTriggered)
-                //{
-                    //maxIndice = guionList.Count - 1;
-                    botonAtras.gameObject.SetActive(true);
-                    pollController.PollActivated();
-                    pollTriggered = true;
-                //}
+                botonAtras.gameObject.SetActive(true);
+                pollController.PollActivated();
+                pollTriggered = true;
             }
         }
 
@@ -103,66 +98,40 @@ public class SubtitlesController : MonoBehaviour
         guionList.Add(guionJson.guionBD[guionList.Count]);
         indice = guionList.Count - 1;
         maxIndice = indice;
-        ActualizarTexto();
-        ActualizarSprite();
+        ActualizarStream();
     }
 
     public void AvanzarLínea()
     {
-        /*if (indice < maxIndice)
-        {*/
-            indice++;
-            botonAtras.gameObject.SetActive(true);
+        indice++;
+        botonAtras.gameObject.SetActive(true);
 
-            if (indice >= maxIndice)
-            {
-                indice = maxIndice; 
-                botonSiguiente.gameObject.SetActive(false); 
-            }
-
-            ActualizarTexto();
-            ActualizarSprite();
-        /*}
-        else
+        if (indice >= maxIndice)
         {
-            Debug.Log("Has llegado al final del texto.");
-        }*/
+            indice = maxIndice;
+            botonSiguiente.gameObject.SetActive(false);
+        }
+
+        ActualizarStream();
     }
 
     public void RetrocederLínea()
     {
-        /*if (indice > 0)
-        {*/
-            indice--;
-            botonSiguiente.gameObject.SetActive(true);
+        indice--;
+        botonSiguiente.gameObject.SetActive(true);
 
-            if (indice <= 0)
-            {
-                indice = 0; 
-                botonAtras.gameObject.SetActive(false); 
-            }
-
-            ActualizarTexto();
-            ActualizarSprite();
-        /*}
-        else
+        if (indice <= 0)
         {
-            Debug.Log("Estás en el inicio del texto.");
-        }*/
+            indice = 0;
+            botonAtras.gameObject.SetActive(false);
+        }
+
+        ActualizarStream();
     }
 
-    public void ActualizarTexto()
+    public void ActualizarStream()
     {
         subtitle.text = guionList[indice].text;
-    }
-
-    /*public int GetIndice()
-    {
-        return indice;
-    }*/
-
-    public void ActualizarSprite()
-    {
         skinActual = guionJson.guionBD[indice].skin;
 
         if (skinActual != skinPrevious)
@@ -187,6 +156,11 @@ public class SubtitlesController : MonoBehaviour
             skinPrevious = skinActual;
         }
 
+    }
+
+    public List<LineaSubtitles> GetGuionList()
+    {
+        return guionList;
     }
 
 }

@@ -48,9 +48,9 @@ public class EndingPlay : MonoBehaviour
     {
         ConvertirEnListaSegunCategoria();
 
-        playerName = Temporal.Instance.GetPlayerName();
+        playerName = UserInfo.Instance.GetPlayerName();
 
-        Temporal.Instance.SetVolumenGeneral();
+        AudioManager.Instance.ChangeVolume(UserInfo.Instance.GetVolumenGeneral());
 
         switch (typeEnding)
         {

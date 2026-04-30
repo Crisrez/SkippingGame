@@ -4,6 +4,11 @@ using UnityEngine.UI;
 public class VolumenController : MonoBehaviour
 {
     [SerializeField] private Slider slider;
+    [SerializeField] private Image imageVolume;
+
+    [SerializeField] private Sprite highSprite;
+    [SerializeField] private Sprite midSprite;
+    [SerializeField] private Sprite lowSprite;
 
     void Awake()
     {
@@ -13,26 +18,36 @@ public class VolumenController : MonoBehaviour
     void Start()
     {
         slider.gameObject.SetActive(false);
-        slider.value = MusicPlayer.Instance.GetVolume();
-        slider.onValueChanged.AddListener(SetVolumen);
+        slider.value = UserInfo.Instance.GetVolumenGeneral();
+        slider.onValueChanged.AddListener(SliderChange);
+        slider.onValueChanged.AddListener(SpriteVolume);
     }
 
-    void SetVolumen(float value)
+    void SliderChange(float value)
     {
-        MusicPlayer.Instance.SetVolume(value);
+        UserInfo.Instance.SetVolumenGeneral(value);
+        AudioManager.Instance.ChangeVolume(UserInfo.Instance.GetVolumenGeneral());
     }
 
     public void ShowHideSlider()
     {
-        if (slider.gameObject.activeSelf)
-            slider.gameObject.SetActive(false);
-        else slider.gameObject.SetActive(true);
-
+        slider.gameObject.SetActive(!slider.gameObject.activeSelf);
     }
 
-    public void HideSlider()
+    private void SpriteVolume(float value)
     {
-        slider.gameObject.SetActive(false);
+        if (value >= 0.6f)
+        {
+            imageVolume.sprite = highSprite;
+        }
+        else if (value >= 0.3f)
+        {
+            imageVolume.sprite = midSprite;
+        }
+        else
+        {
+            imageVolume.sprite = lowSprite;
+        }
     }
 
 }
